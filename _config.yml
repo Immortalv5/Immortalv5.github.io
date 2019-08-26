@@ -108,7 +108,7 @@ analytics:
 # Site Author
 author:
   name             : "Amar Sai Teja"
-  avatar           : '/images/bio-pic.jpg'# path of avatar image, e.g. "/assets/images/bio-photo.jpg"
+  avatar           : '/images/bio-pic.jpg'
   bio              : "Portfolio"
   location         : "Earth"
   email            : "saitejaaoe@gmail.com"
