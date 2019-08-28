@@ -7,9 +7,10 @@ header:
 excerpt: "Hello World"
 ---
 
-# Hello
-This is the Worlds simplest program ever written by **programmers**
+## Program
 
-```python
-    print("Hello World")
+This is the Worlds simplest program ever written by **programmers**.
+
+```Python
+print("Hello World")
 ```
