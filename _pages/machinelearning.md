@@ -4,7 +4,7 @@ permalink: /machine-learning/
 title: "Machine Learning"
 author_profile: true
 header:
-  image: "/images/Robo.gif"
+  image: "/images/NN.jpeg"
 ---
 
 First of all, I want to clear somethings about Machine Learning.

@@ -111,11 +111,11 @@ author:
   avatar           : '/images/bio-pic.jpg'
   bio              : "Portfolio"
   location         : "Earth"
-  email            : #"saitejaaoe@gmail.com"
+  email            : "saitejaaoe@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "saitejaaoe@gmail.com"
+      #url: "saitejaaoe@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
@@ -124,7 +124,7 @@ author:
       url: "https://twitter.com/Amar_Sai_Teja"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
+      url: "https://www.facebook.com/Immortalv5.0"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/immortalv5"
@@ -278,6 +278,8 @@ compress_html:
   ignore:
     envs: development
 
+gems:
+  - jekyll-last-modified-at
 
 # Defaults
 defaults:
