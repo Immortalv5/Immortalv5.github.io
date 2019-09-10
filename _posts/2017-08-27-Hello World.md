@@ -9,8 +9,8 @@ excerpt: "Hello World"
 
 ## Program
 
-This is the Worlds simplest program ever written by **programmers**.
+This is the World's first program written by every **programmers**.
 
 ```Python
-print("Hello World")
+  print("Hello World")
 ```
