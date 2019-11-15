@@ -4,7 +4,7 @@ permalink: /about/
 author_profile: true
 layout: archive
 header:
-  image: "/images/Kratos.jpg"
+  image: "/images/Mountain.jpg"
 ---
 
 > Trying to create online resume
