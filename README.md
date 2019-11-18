@@ -1,1 +1,1 @@
-> I'm ** Amar Sai Teja Chityala **  
+> I'm **Amar Sai Teja Chityala**  
