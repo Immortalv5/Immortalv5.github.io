@@ -9,7 +9,9 @@ header:
 
 > About Me
 
-<cite>Amar Sai Teja</cite> --- Nov 2019 {: .small}
+<cite>Amar Sai Teja</cite> --- Nov 2019
+{: .small}
+
 <address>
   8 Link Walk<br /> Hatfield<br /> AL10 8TS
 </address>
@@ -26,12 +28,11 @@ header:
 ## Skills
 
 | Skills                |                                                        |
-|:---------------------:|:------------------------------------------------------:|
+|-----------------------|--------------------------------------------------------|
 | Programming Languages | C, C++, Python                                         |
 | Web Technologies      | HTML, CSS, XML                                         |
 | Software              | Adobe Photoshop, Premiere Pro, Lightroom and Unity 3D  |
 | Operating Systems     | Windows, Fedora                                        |
-|=======================|========================================================|
 | Others                | MS-Word, MS-Excel, MS-PowerPoint, MySQL                |
 
 ## Project Experience
