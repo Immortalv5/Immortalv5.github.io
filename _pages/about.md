@@ -41,7 +41,6 @@ header:
 *	Developed a Lung Abnormality detection system using CNN.
 *	Created a Mobile Recharge Management System.
 
-
 ## Achievements
 *	Participated in NSS Special Camp at MVDM School, Visakhapatnam (2017-18).
 
