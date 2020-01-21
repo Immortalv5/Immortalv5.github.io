@@ -7,9 +7,7 @@ header:
   image: "/images/Back.jpg"
 ---
 
-> About Me
-
-<cite>Amar Sai Teja</cite> --- Jan 2020
+<cite>Amar Sai Teja Chityala</cite> --- Jan 2020
 {: .small}
 
 ## Education
@@ -67,9 +65,9 @@ header:
     * Position of responsibility: Leader
 * Mobile Recharge Management  
     It is a management system which recharges a phone number with a given offer and stores all the recharge transactions in a database.
-      * Duration: Sept 2017 to Oct 2017.
-      * Used Software: NetBeans (Java) and MySQL.
-      * Position of responsibility: Leader
+    * Duration: Sept 2017 to Oct 2017.
+    * Used Software: NetBeans (Java) and MySQL.
+    * Position of responsibility: Leader
 
 ## Co-Curricular Activities
 
