@@ -1,5 +1,5 @@
 ---
-title: "About"
+title: "About Me"
 permalink: /about/
 author_profile: true
 layout: archive
@@ -43,7 +43,7 @@ header:
 
 | Skills                        |                                                          |
 | ----------------------------- | -------------------------------------------------------- |
-| Programming Languages         | C, C++, Java, ** Python **, R, Q# |
+| Programming Languages         | C, C++, Java, Python, R, Q# |
 | Web Technologies              | HTML, CSS, XML, Markdown |
 | Technologies                  | Artificial Intelligence, Raspberry PI, Quantum Computing, Blockchain |
 | Software                      | MS-Word, MS-Excel, MS-PowerPoint, Adobe Photoshop, Adobe Premiere Pro, Adobe Lightroom, Unity 3D, Netlogo, SPSS, Anaconda, Docker, Octave, NetBeans, Ethereum, Intellij |
