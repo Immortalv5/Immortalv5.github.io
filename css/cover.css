@@ -42,7 +42,7 @@ body {
  * Header
  */
 .masthead {
-  margin: 0 0 1rem 0;
+  margin-right: auto;
   float: center;
 }
 
@@ -102,6 +102,12 @@ body {
   float:right;
 }
 
+img{
+  height: auto;
+  width: 100%;
+  max-width: 700px;
+}
+
 .parallel{
   display: flex;
   flex-direction:column;
@@ -129,10 +135,6 @@ body {
   border-radius: 3rem 0 0 3rem;
 }
 
-.blacc{
-  color: #333;
-  border-color: #fff;
-}
 
 .card{
   background-color: #999;
@@ -153,17 +155,42 @@ body {
 
 .footer_social {
 text-align: center;
-padding-top: 7rem;
+padding: 4rem 0 2rem 0;
 }
 
 .footer_social a {
-padding: 0 20px;
+padding: 0 20px 10px 20px;
 font-size: 20px;
 color:#999;
 text-decoration: none;
+transition: all 1s ease;
 }
 
 .footer_social a:hover {
-font-size: 28px;
+font-size: 50px;
 transition: 0.7s;
+border-color: #666;
+border-bottom: 0.25rem solid;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .about{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .about .left{
+    align-content: flex-start;
+    flex:50%;
+    font-weight: 400;
+    padding: 5rem 0 4rem 0;
+  }
+
+  .about .right{
+    align-content: flex-end;
+    flex:50%;
+  }
+
+
 }
