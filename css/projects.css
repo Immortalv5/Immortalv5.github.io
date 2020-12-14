@@ -1,0 +1,31 @@
+html{
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  box-shadow: inset 0 0 4rem rgba(0, 0, 0, .5);
+  height:100%;
+  user-select: none;
+}
+
+body {
+  background-color: #333;
+  color : #fff;
+  text-align: center;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+}
+
+.classs{
+  margin: 17% 0;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #aaa, 0 0 40px #aaa, 0 0 50px #aaa, 0 0 60px #aaa, 0 0 70px #aaa;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #777, 0 0 40px #777, 0 0 50px #777, 0 0 60px #777, 0 0 70px #777, 0 0 80px #777;
+  }
+}
