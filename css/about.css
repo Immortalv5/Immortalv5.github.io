@@ -1,6 +1,6 @@
-.box-around{
-  box-shadow: inset 0 0 4rem rgba(0, 0, 0, .5);
-}
+/*
+ * Container
+*/
 
 .about-container {
   max-width: 75%;
@@ -12,7 +12,7 @@ body {
   height: 100%;
   background-color: #333;
   color : #fff;
-  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  text-shadow: 0 0.15rem .1rem rgba(0, 0, 0, .5);
 }
 
 a:hover{
@@ -24,15 +24,100 @@ a:hover{
   margin: auto;
 }
 
-.bg-primary{
-  border-radius: 1rem;
-  background-color: #666 !important;
+.geetha-left{
+  border-left: 0.25rem solid;
 }
 
-.bg-primary:hover{
-  border-radius: 1rem;
-  background-color: #999 !important;
+main{
+  padding: 5rem 0 4rem 0;
 }
+
+/*
+ * Skills and Interest
+*/
+
+.about{
+  display: flex;
+  margin: auto;
+}
+
+.about .left{
+  flex:50%;
+  font-weight: 400;
+  float:left;
+}
+
+.about .right{
+  flex:50%;
+  float:right;
+}
+
+.parallel{
+  display: flex;
+  flex-direction:column;
+}
+
+.parallel .up{
+  float:left;
+}
+
+.parallel .down{
+  float:right;
+}
+
+.geetha-left{
+  padding: 1rem;
+  padding-left: 2rem !important;
+  margin: 0 0 1px 0;
+  margin-right: auto;
+  border-left: .25rem solid;
+  border-radius: 0 3rem 3rem 0;
+}
+
+.geetha-right{
+  padding: 1rem;
+  padding-right: 2rem !important;
+  margin: 0 0 1px 0;
+  margin-left: auto;
+  border-right: .25rem solid;
+  border-radius: 3rem 0 0 3rem;
+}
+
+.card{
+  background-color: #999;
+}
+
+.card:hover{
+	transform: scaleY(1.02);
+	transition: 0.7s;
+	background-color: #999;
+	box-shadow: 0px 5px 30px -8px #aaa;
+}
+
+.line-1{
+    overflow: hidden;
+    position: relative;
+    margin-left:auto;
+    white-space: nowrap;
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 2s steps(44) 1s 1 normal both;
+}
+
+@keyframes typewriter{
+  from{max-width: 0em;}
+  to{max-width: 20rem;}
+}
+
+.over{
+  display: none;
+}
+
+/*
+ * Footer
+*/
 
 .mastfoot {
   color: rgba(255, 255, 255, .5);
@@ -56,12 +141,4 @@ font-size: 50px;
 transition: 0.7s;
 border-color: #16161D;
 border-bottom: 0.25rem solid;
-}
-
-.geetha{
-  border-left: 0.25rem solid;
-}
-
-main{
-  padding: 5rem 0 4rem 0;
 }

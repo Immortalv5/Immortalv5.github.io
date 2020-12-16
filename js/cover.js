@@ -39,7 +39,42 @@ var TxtType = function(el, toRotate, period) {
         }, delta);
     };
 
+    var slider = function(el, toRotate, period) {
+            this.toRotate = toRotate;
+            this.el = el;
+            this.txt = '';
+            this.tick();
+        };
+
+        slider.prototype.tick = function() {
+            var fullTxt = this.toRotate;
+            this.txt = fullTxt.substring(0, this.txt.length + 3);
+
+            var that = this;
+            var delta = 100;
+            this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+            setTimeout(function() {
+            that.tick();
+          }, delta);
+        };
+
     window.onload = function() {
+        var slide = document.getElementsByClassName('slide');
+        for (var i=0; i<slide.length; i++) {
+            var data = slide[i].getAttribute('data');
+            var period = slide[i].getAttribute('data-period');
+            if(i < 3)
+            {
+              slide[i].setAttribute('class', 'down geetha-left card h4 slide');
+              new slider(slide[i], data, period);
+            }
+            else {
+              {
+                slide[i].setAttribute('class', 'down geetha-right card h5 slide');
+                new slider(slide[i], data, period);
+              }
+            }
+            }
         var elements = document.getElementsByClassName('typewrite');
         for (var i=0; i<elements.length; i++) {
             var toRotate = elements[i].getAttribute('data-type');

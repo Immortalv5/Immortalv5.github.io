@@ -276,7 +276,7 @@ Main Components
   -webkit-transition: height 0.4s;
   -moz-transition: height 0.4s;
   transition: height 0.4s;
-  border-radius: 5rem;
+  border-radius: 10rem;
 }
 .cd-horizontal-timeline .events-content li {
   position: absolute;
@@ -329,6 +329,7 @@ Main Components
   margin: 0 auto;
 }
 .cd-horizontal-timeline .events-content h2 {
+  margin-top: 2%;
   font-weight: bold;
   font-size: 2.6rem;
   font-family: "Playfair Display", serif;
@@ -336,6 +337,7 @@ Main Components
   line-height: 1.2;
 }
 .cd-horizontal-timeline .events-content h4 {
+  margin-top: 5%;
   font-weight: bold;
   font-size: 4rem;
   font-family: "Playfair Display", serif;

@@ -54,7 +54,6 @@ jQuery(document).ready(function($){
 				var mq = checkMQ();
 				( mq == 'mobile' ) && showNewContent(timelineComponents, timelineTotWidth, 'prev');
 			});
-
 			//keyboard navigation
 			$(document).keyup(function(event){
 				if(event.which=='37' && elementInViewport(timeline.get(0)) ) {
@@ -150,8 +149,8 @@ jQuery(document).ready(function($){
 		var eventDate = event.data('date'),
 			visibleContent = eventsContent.find('.selected'),
 			selectedContent = eventsContent.find('[data-date="'+ eventDate +'"]'),
-			selectedContentHeight = selectedContent.height();
-
+			selectedContentHeight = selectedContent.height() + (selectedContent.height() / 4);
+			console.log(selectedContentHeight);
 		if (selectedContent.index() > visibleContent.index()) {
 			var classEnetering = 'selected enter-right',
 				classLeaving = 'leave-left';
