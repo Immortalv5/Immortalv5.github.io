@@ -12,6 +12,7 @@
   <link rel='stylesheet' href='../css/cards.css'>
   <link rel='stylesheet' href='../css/about.css'>
   <link rel='stylesheet' href='../css/slider.css'>
+  <link rel='stylesheet' href='../css/footer.css'>
 </head>
 <body class ='text-center'>
   <div class="about-container user-select-none flex-column">
@@ -131,36 +132,50 @@
       </div>
     </div>
 
-    <!-- Introduction-->
+    <!-- Joystick-->
     <main role = 'main'>
       <div class = 'row'>
-        <div class = 'title col-2'><a class = 'fa fa-angle-left' onclick="SkillsOpen()"></a></div>
-        <div class = 'col-8'><h1 class = 'display-2'>Start Searching</h1></div>
-        <div class = 'title col-2'><a class = 'fa fa-angle-right' onclick="TimelineOpen()"></a></div>
+        <div class = 'col'>
+          <a class = 'title fa fa-angle-up' onclick=''></a>
+        </div>
+      </div>
+      <div class = 'row'>
+        <a class = 'fa fa-angle-left title ml-auto mr-5' onclick="SkillsOpen()"></a>
+          <div class="space-top">
+            <div class="center-align">
+              <canvas id="joystick" height="300" width="300"></canvas>
+            </div>
+          </div>
+        <a class = 'fa fa-angle-right title mr-auto ml-5' onclick="TimelineOpen()"></a>
+      </div>
+      <div class = 'row'>
+        <div class = 'col'>
+          <a class = 'title fa fa-angle-down' onclick=''></a>
         </div>
       </div>
         <!-- Skills -->
-      <skills id = 'Skills' class = 'overlay right'>
+      <skills id = 'Skills' class = 'overlay user-select-none'>
         <a class="fa fa-times closebtn" onclick="SkillsClose()"></a>
         <div class = 'about-container'>
-        <div class = 'about' id = 'innerSkills'>
-          <div class = 'left parallel text-left'>
-            <div class = 'up geetha-left display-2 pl-4 pb-5'>Skills</div>
-              <div id = 'anime-left' data = 'Expert'></div>
-              <div id = 'anime-left' data = 'Proficient'></div>
-              <div id = 'anime-left' data = 'Novice'></div>
+          <div class = 'about' id = 'innerSkills'>
+            <div class = 'left parallel text-left just-geetha-left'>
+              <div class = 'up geetha-left display-2 pl-4 pb-5'>Skills</div>
+                <div id = 'anime-left' data = 'Expert'></div>
+                <div id = 'anime-left' data = 'Proficient'></div>
+                <div id = 'anime-left' data = 'Novice'></div>
+            </div>
+            <div class = 'right parallel text-right just-geetha-right'>
+              <div class = 'up geetha-right name display-2 pl-4 pb-5'>Interest</div>
+              <div id = 'anime-right' data = 'Quantum Computing'></div>
+              <div id = 'anime-right' data = 'Block Chain'></div>
+              <div id = 'anime-right' data = 'Hacking'></div>
+              <div id = 'anime-right' data = 'Hello🎃🎃'></div>
+              <div id = 'anime-right' data = 'Much More'></div>
+            </div>
           </div>
-          <div class = 'right parallel text-right'>
-            <div class = 'up geetha-right name display-2 pl-4 pb-5'>Interest</div>
-            <div id = 'anime-right' data = 'Quantum Computing'></div>
-            <div id = 'anime-right' data = 'Block Chain'></div>
-            <div id = 'anime-right' data = 'Hacking'></div>
-            <div id = 'anime-right' data = 'Hello🎃🎃'></div>
-            <div id = 'anime-right' data = 'Much More'></div>
-          </div>
-        </div>
         </div>
       </skills>
+
 
         <!-- Skills -->
       <div class="over">
@@ -238,7 +253,6 @@
           </div>
         </div>
     </main>
-
       <footer class="mastfoot cover">
         <div class = 'footer_social'>
           <a class = 'fa fa-linkedin' href = 'https://www.linkedin.com/in/amar-sai-teja-c-13588b159/'></a>
@@ -251,11 +265,13 @@
 </div>
 
 </body>
-
 <script src='https://code.jquery.com/jquery-3.1.0.js'></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+<script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js" integrity="sha512-UXumZrZNiOwnTcZSHLOfcTs0aos2MzBWHXOHOuB0J/R44QB0dwY5JgfbvljXcklVf65Gc4El6RjZ+lnwd2az2g==" crossorigin="anonymous"></script>
 <script src='../js/timeline.js'></script>
 <script src='../js/about.js'></script>
+<script src='../js/joystick.js'></script>
 </body>
 </html>

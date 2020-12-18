@@ -22,11 +22,13 @@ a:hover{
 .title{
   font-size: 70px;
   text-align: center;
-  margin: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+  color: #999;
 }
 
-.geetha-left{
-  border-left: 0.25rem solid;
+.title:hover{
+  color: #ccc;
 }
 
 main{
@@ -69,18 +71,24 @@ main{
 .geetha-left{
   padding: 1rem;
   padding-left: 2rem !important;
-  margin: 0 0 1px 0;
+  margin: 0 0 5px 0;
   margin-right: auto;
-  border-left: .25rem solid;
   border-radius: 0 3rem 3rem 0;
+}
+
+.just-geetha-left{
+  border-left: .25rem solid;
+}
+
+.just-geetha-right{
+  border-right: .25rem solid;
 }
 
 .geetha-right{
   padding: 1rem;
   padding-right: 2rem !important;
-  margin: 0 0 1px 0;
+  margin: 0 0 5px 0;
   margin-left: auto;
-  border-right: .25rem solid;
   border-radius: 3rem 0 0 3rem;
 }
 
@@ -126,31 +134,29 @@ main{
   z-index: 10;
 }
 
-/*
- * Footer
-*/
-
-.mastfoot {
-  top: 3px;
-  color: rgba(255, 255, 255, .5);
+.space-top {
+  padding-top: 10px;
 }
 
-.footer_social {
-text-align: center;
-padding: 4rem 0 2rem 0;
+#joystick {
+  height: 300px;
+  width: 300px;
+  border-radius: 300px;
+  -moz-border-radius: 300px;
+  -webkit-border-radius: 300px;
+  text-align: center;
+  background-color: #999;
+  font: 24px/300px Helvetica, Arial, sans-serif;
+  cursor: all-scroll;
+  user-select: none;
+  z-index: -100;
 }
 
-.footer_social a {
-padding: 0 20px 10px 20px;
-font-size: 20px;
-color:#999;
-text-decoration: none;
-transition: all 1s ease;
-}
-
-.footer_social a:hover {
-font-size: 50px;
-transition: 0.7s;
-border-color: #16161D;
-border-bottom: 0.25rem solid;
+.noselect {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }

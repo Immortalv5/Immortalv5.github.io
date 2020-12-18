@@ -14,11 +14,25 @@ body {
   text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
 }
 
+
 .classs{
-  margin: 17% 0;
+  padding: 15% 20% 15% 20%;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
+}
+
+.wrap_l{
+  position: relative;
+  text-align: right;
+  padding-left: auto;
+  margin-left: 20%;
+}
+
+.wrap_r{
+  position: relative;
+  text-align: left;
+  padding-right: auto;
 }
 
 @-webkit-keyframes glow {
