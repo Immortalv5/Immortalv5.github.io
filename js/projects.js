@@ -16,8 +16,7 @@ var Dot = function(el, toRotate, period) {
         this.txt = fullTxt.substring(0, this.txt.length + 1);
         }
 
-        this.el.innerHTML = '<div class="wrap_l">Working on IT</div><span class="wrap_r">'+this.txt+'</span>';
-        console.log(this.txt)
+        this.el.innerHTML = '<div>Working on IT'+this.txt+'</div>';
         var that = this;
         var delta = 200 - Math.random() * 100;
 

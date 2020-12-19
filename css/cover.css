@@ -8,7 +8,45 @@ body {
   background-color: #333;
   color : #fff;
   text-shadow: 0 .15rem .1rem rgba(0, 0, 0, .5);
+  background-repeat:no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 100%;
+  background-image: url('../img/GjrkLhP.jpg');
 }
+
+/*
+ * Navigation Bar
+ */
+
+ .masthead {
+   margin-right: auto;
+   float: center;
+ }
+
+ .nav-masthead .nav-link {
+   font-size: 20px;
+   font-weight: 700;
+   color: rgba(255, 255, 255, .5);
+   border-bottom: .15rem solid transparent;
+ }
+
+ .nav-masthead .active{
+   color: #fff;
+   border-bottom-color: #fff;
+ }
+
+ .nav-masthead .nav-link:hover,
+ .nav-masthead .nav-link:focus {
+   border-bottom-color: rgba(255, 255, 255, .25);
+ }
+
+ .nav-masthead .nav-link {
+   max-width: 14%;
+   margin: 0.7rem;
+   margin-right: 1.5rem;
+ }
+
 
 /*
  * Container
@@ -121,6 +159,36 @@ img{
     align-content: flex-end;
     flex:50%;
   }
+}
 
+/*
+ * Footer
+*/
 
+.mastfoot {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgba(255, 255, 255, .5);
+}
+
+.footer_social {
+text-align: center;
+padding: 4rem 0 2rem 0;
+}
+
+.footer_social a {
+padding: 0 20px 10px 20px;
+font-size: 20px;
+color:#999;
+text-decoration: none;
+transition: all 1s ease;
+}
+
+.footer_social a:hover {
+font-size: 50px;
+transition: 0.7s;
+border-color: #16161D;
+border-bottom: 0.25rem solid;
 }
