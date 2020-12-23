@@ -41,9 +41,3 @@ var Dot = function(el, toRotate, period) {
           new Dot(elements[i],'......🎈', period);
       }
     }
-
-    $('.grid').masonry({
-      itemSelector: '.grid-item',
-      columnWidth: '.grid-sizer',
-      percentPosition: true
-    });
