@@ -41,3 +41,13 @@ var Dot = function(el, toRotate, period) {
           new Dot(elements[i],'......🎈', period);
       }
     }
+
+function contentSize(i){
+  var img = document.getElementsByTagName('img');
+  img[i-1].style.opacity = 0.02;
+}
+
+function setOpacity(i) {
+  var img = document.getElementsByTagName('img');
+  img[i-1].style.opacity = 1;
+}

@@ -10,6 +10,15 @@ body {
   background-image: url('../img/GjrkLhP.jpg');
 }
 
+a{
+  text-decoration: none;
+  color: #aaa;
+}
+
+a:hover{
+  color: #ddd;
+}
+
 /*
  * Navigation Bar
  */
@@ -51,8 +60,8 @@ body {
   margin:auto;
 }
 
-.classs{
-  margin-left: auto;
+.glowing{
+  font-size: 3vmin;
   -webkit-animation: glow 1s ease-in-out infinite alternate;
   -moz-animation: glow 1s ease-in-out infinite alternate;
   animation: glow 1s ease-in-out infinite alternate;
@@ -62,10 +71,10 @@ body {
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #aaa, 0 0 40px #aaa, 0 0 50px #aaa, 0 0 60px #aaa, 0 0 70px #aaa;
+    text-shadow: 0 0 10px #999, 0 0 20px #999, 0 0 30px #999, 0 0 40px #999, 0 0 50px #999, 0 0 60px #999, 0 0 70px #999;
   }
   to {
-    text-shadow: 0 0 20px #fff, 0 0 30px #777, 0 0 40px #777, 0 0 50px #777, 0 0 60px #777, 0 0 70px #777, 0 0 80px #777;
+    text-shadow: 0 0 20px #777, 0 0 30px #777, 0 0 40px #777, 0 0 50px #777, 0 0 60px #777, 0 0 70px #777, 0 0 80px #777;
   }
 }
 
@@ -81,25 +90,58 @@ body {
     -moz-column-gap: 1em;
     column-gap: 1em;
     padding: 0;
+    margin-top: 4rem;
 }
 
-.item {
-    max-width: 600px;
-    max-height: 600px;
+
+.masonry img{
     display: inline-block;
-    margin-top: 1rem;
 	  -webkit-transition:1s ease all;
     width: 100%;
     height: 100%;
 }
 
-.item:hover {
-  transform: scale(1.03);
-  opacity: 0.7;
-
+.masonry .post{
+  display: inline-block;
+  -webkit-transition:1s ease all;
+  width: 100%;
+  height: 100%;
 }
 
-@media only screen and (max-width: 620px) {
+.masonry .post .content{
+  text-align: center;
+  display: none;
+}
+
+.masonry img:hover{
+  opacity: 0.0;
+  z-index: -1;
+}
+
+.masonry .post:hover{
+  transform: scale(1.02);
+  background-color: #333;
+}
+
+.masonry .post:hover .content{
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+
+img:hover{
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 950px) {
+    .glowing{
+        font-size: 5vmin;
+    }
+
     .masonry {
         -moz-column-count: 1;
         -webkit-column-count: 1;
@@ -107,14 +149,21 @@ body {
 }
 }
 
-@media only screen and (min-width: 620px) {
+@media only screen and (min-width: 950px) and (max-width: 1500px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
     .masonry {
         -moz-column-count: 3;
         -webkit-column-count: 3;
         column-count: 3;
     }
 }
-
 
 /*
  * Footer
