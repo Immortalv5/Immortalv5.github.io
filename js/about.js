@@ -20,24 +20,23 @@ window.onload = function() {
   var stage = new createjs.Stage('joystick');
 
   var psp = new createjs.Shape();
-  psp.graphics.beginFill('#333333').drawCircle(xCenter, yCenter, 50);
+  psp.graphics.beginFill('#ffffff').drawCircle(xCenter, yCenter, 50);
 
   psp.alpha = 0.25;
 
-  var vertical = new createjs.Shape();
-  var horizontal = new createjs.Shape();
+  //var vertical = new createjs.Shape();
+  //var horizontal = new createjs.Shape();
   //vertical.graphics.beginFill('#666').drawRect(150, 0, 2, 300);
   //horizontal.graphics.beginFill('#666').drawRect(0, 150, 300, 2);
 
   stage.addChild(psp);
-  stage.addChild(vertical);
-  stage.addChild(horizontal);
-  createjs.Ticker.framerate = 60;
+  //stage.addChild(vertical);
+  //stage.addChild(horizontal);
   createjs.Ticker.addEventListener('tick', stage);
   stage.update();
 
   var myElement = $('#joystick')[0];
-
+  planetMaking();
   // create a simple instance
   // by default, it only adds horizontal recognizers
   var mc = new Hammer(myElement);
@@ -47,14 +46,13 @@ window.onload = function() {
     xCenter = psp.x;
     yCenter = psp.y;
     psp.alpha = 0.5;
-
+    document.getElementById('joystick').style.cursor = 'grabbing';
     stage.update();
   });
 
   // listen to events...
   mc.on("panmove", function(ev) {
     var pos = $('#joystick').position();
-
     var x = (ev.center.x - pos.left - 150);
     var y = (ev.center.y - pos.top - 150);
     $('#xVal').text('X: ' + x);
@@ -81,8 +79,9 @@ window.onload = function() {
   });
 
   mc.on("panend", function(ev) {
+    document.getElementById('joystick').style.cursor = 'grab';
     psp.alpha = 0.25;
-    createjs.Tween.get(psp).to({x:xCenter,y:yCenter},750,createjs.Ease.elasticIn);
+    createjs.Tween.get(psp).to({x:xCenter,y:yCenter},750,createjs.Ease.elasticOut);
   });
 }
 
@@ -113,7 +112,6 @@ function SkillsClose() {
   document.getElementById("Skills").style.width = "0%";
 }
 
-
 function calculateCoords(angle, distance) {
   var coords = {};
   distance = Math.min(distance, 100);
@@ -123,4 +121,27 @@ function calculateCoords(angle, distance) {
   coords.y = distance * Math.sin(rads);
 
   return coords;
+}
+
+function planetMaking(){
+  var myElement = $('#joystick')[0];
+  myElement.style.boxShadow = 'inset -10px -10px 40px #111, inset 10px 10px 30px -10px rgba(255, 204, 159, 1)'
+  myElement.style.background = 'url(http://artem.anmedio.ru/dev/planet/mars.jpg) repeat-x'
+  myElement.style.animation = 'translateBackground 15s infinite linear'
+  myElement.style.opacity = 1
+}
+
+function showingArrow(){
+  var showArrow = document.getElementById('customSwitch1');
+  var arrow = document.querySelectorAll('.title');
+  if (showArrow.checked){
+    for ( var i=0; i< arrow.length; i++){
+        arrow[i].style.visibility = 'hidden';
+    }
+  }
+  else{
+    for ( var i=0; i< arrow.length; i++){
+        arrow[i].style.visibility = 'visible';
+    }
+  }
 }

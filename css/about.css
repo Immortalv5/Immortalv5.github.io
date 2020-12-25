@@ -54,6 +54,7 @@ a:hover{
 }
 
 .title{
+  visibility: hidden;
   font-size: 70px;
   text-align: center;
   margin-top: auto;
@@ -199,6 +200,10 @@ main{
   z-index: 10;
 }
 
+/*
+ * Joystick
+*/
+
 .space-top {
   padding-top: 10px;
 }
@@ -212,7 +217,7 @@ main{
   text-align: center;
   background-color: #999;
   font: 24px/300px Helvetica, Arial, sans-serif;
-  cursor: all-scroll;
+  cursor: grab;
   user-select: none;
   z-index: -100;
 }
@@ -225,6 +230,24 @@ main{
   -ms-user-select: none;
   user-select: none;
 }
+
+@keyframes translateBackground{
+  0%{
+    background-position-x:0;
+  }
+  100%{
+    background-position-x:-600px;
+  }
+}
+@keyframes rotatePlanet{
+  0%{
+    transform:rotateZ(0);
+  }
+  100%{
+    transform:rotateZ(-360deg);
+  }
+}
+
 
 /*
  * Footer
@@ -256,4 +279,19 @@ font-size: 50px;
 transition: 0.7s;
 border-color: #16161D;
 border-bottom: 0.25rem solid;
+}
+
+.mastfoot .custom-switch{
+  color: #666;
+  position: relative;
+  padding-left: 42px;
+  bottom: -30px;
+}
+
+.mastfoot #customSwitch1{
+  color: #333;
+}
+
+.mastfoot input:checked + input{
+  background-color: #333;
 }
