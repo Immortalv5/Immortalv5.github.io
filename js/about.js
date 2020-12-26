@@ -3,6 +3,7 @@ function sleep(ms) {
 }
 
 window.onload = function() {
+
   var animeRight = document.querySelectorAll('div#anime-right');
   var animeLeft = document.querySelectorAll('div#anime-left');
   for (var i = 0; i < animeLeft.length; i++) {
@@ -125,8 +126,8 @@ function calculateCoords(angle, distance) {
 
 function planetMaking(){
   var myElement = $('#joystick')[0];
-  myElement.style.boxShadow = 'inset -10px -10px 40px #111, inset 10px 10px 30px -10px rgba(255, 204, 159, 1)'
-  myElement.style.background = 'url(http://artem.anmedio.ru/dev/planet/mars.jpg) repeat-x'
+  myElement.style.boxShadow = 'inset -10px -10px 40px #111, inset 10px 10px 30px -10px rgba(255, 255, 255, 1)'
+  myElement.style.background = 'url(../img/mars.png) repeat-x'
   myElement.style.animation = 'translateBackground 15s infinite linear'
   myElement.style.opacity = 1
 }
