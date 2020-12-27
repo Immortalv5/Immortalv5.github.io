@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 window.onload = function() {
-
+  loadingPage();
   var animeRight = document.querySelectorAll('div#anime-right');
   var animeLeft = document.querySelectorAll('div#anime-left');
   for (var i = 0; i < animeLeft.length; i++) {
@@ -113,6 +113,15 @@ function SkillsClose() {
   document.getElementById("Skills").style.width = "0%";
 }
 
+async function loadingPage(){
+  var load = document.getElementById('pulse-wrapper');
+  var content = document.getElementById('content');
+
+  await sleep(5000);
+  load.style.visibility = 'hidden';
+  content.style.visibility = 'visible';
+}
+
 function calculateCoords(angle, distance) {
   var coords = {};
   distance = Math.min(distance, 100);
@@ -145,4 +154,13 @@ function showingArrow(){
         arrow[i].style.visibility = 'visible';
     }
   }
+}
+
+async function loadingPage(){
+  var load = document.getElementById('pulse-wrapper');
+  var content = document.getElementById('content');
+
+  await sleep(2000);
+  load.style.visibility = 'hidden';
+  content.style.visibility = 'visible';
 }

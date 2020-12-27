@@ -1,3 +1,7 @@
+function sleep(ms) {
+   return new Promise(resolve => setTimeout(resolve, ms));
+}
+
 var TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;
@@ -89,3 +93,12 @@ var TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #999}";
         document.body.appendChild(css);
     };
+
+    async function loadingPage(){
+      var load = document.getElementById('pulse-wrapper');
+      var content = document.getElementById('content');
+
+      await sleep(1000);
+      load.style.visibility = 'hidden';
+      content.style.visibility = 'visible';
+    }

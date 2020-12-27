@@ -1,103 +1,112 @@
 <html>
 <title>Projects</title>
+
+<link rel="icon" type="image/png" href="../img/icon.png"/>
 <link rel="stylesheet" href="../css/bootstrap.css">
 <link rel="stylesheet" href="../css/bootstrap.min.css">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel='stylesheet' href='../css/projects.css'>
 <body>
-<header class = 'project-container'>
-  <nav class="navbar nav-masthead justify-content-end">
-    <a class ="nav-link" href ='../index.html'>Home</a>
-    <a class="nav-link" href="about.html">About</a>
-    <a class="nav-link active" href="projects.html">Projects</a>
-  </nav>
-</header>
+  <div id="pulse-wrapper">
+      <div id="pulse">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+  </div>
+  <div id = 'content'>
+    <header class = 'project-container'>
+      <nav class="navbar nav-masthead justify-content-end">
+        <a class ="nav-link" href ='../index.html'>Home</a>
+        <a class="nav-link" href="about.html">About</a>
+        <a class="nav-link active" href="projects.html">Projects</a>
+      </nav>
+    </header>
 
 <!-- Blog -->
-
-<div class = 'project-container user-select-none'>
-
-    <div class = 'masonry'>
-      <div class = 'post mb-2' onmouseover="contentSize(1)" onmouseout="setOpacity(1)">
-        <a href = '#'>
-          <div class = 'content'>
-            <h1 class = 'glowing text-light'>Lung Abnormality Dectection</h1>
-          </div>
-          <img src="../img/lung.jpg"/>
-        </a>
-      </div>
-      <div class = 'post mb-2' onmouseover="contentSize(2)" onmouseout="setOpacity(2)">
-        <a href = 'https://github.com/Immortalv5/Attendance-Using-Face-Recognition'>
-          <div class = 'content'>
-            <h1 class = 'glowing text-light'>Face Recognition</h1>
-          </div>
-          <img src="../img/face.gif"/>
-        </a>
-      </div>
-      <div class = 'post mb-2' onmouseover="contentSize(3)" onmouseout="setOpacity(3)">
-        <a href='#'>
-          <div class = 'content'>
-            <h1 class = 'glowing text-light'>Stack Overflow</h1>
-          </div>
-          <img src="../img/stackoverflow.PNG"/>
-        </a>
-      </div>
-      <div class = 'post mb-2' onmouseover="contentSize(4)" onmouseout="setOpacity(4)">
-        <a href = 'https://github.com/Immortalv5/First_QC'>
-          <div class = 'content'>
-            <h1 class = 'glowing text-light'>Quantum Computing</h1>
-          </div>
-          <img src="../img/quantum.png"/>
-        </a>
-      </div>
-      <div class = 'post mb-2' onmouseover="contentSize(5)" onmouseout="setOpacity(5)">
-        <a href = 'https://github.com/Immortalv5/Dino'>
-          <div class = 'content'>
-            <h1 class = 'glowing'>Google Dinosaur</h1>
-          </div>
-          <img src="../img/dino.gif"/>
-        </a>
-      </div>
-      <div class = 'post mb-2' onmouseover="contentSize(6)" onmouseout="setOpacity(6)">
-        <a href = '#'>
-          <div class = 'content'>
-            <h1 class = 'glowing'>Web Scraping</h1>
-          </div>
-          <img src="../img/webScraping.png"/>
-        </a>
-      </div>
-      <div class = 'post mb-2' onmouseover="contentSize(7)" onmouseout="setOpacity(7)">
-        <a href = '#'>
-          <div class = 'content'>
-            <h1 class = 'glowing'>Taxi Demand Prediction</h1>
-          </div>
-          <img src="../img/taxi.gif"/>
-        </a>
-      </div>
-      <div class = 'post' onmouseover="contentSize(8)" onmouseout="setOpacity(8)">
-        <a href = '#'>
-          <div class = 'content'>
-            <h1 class = 'glowing pb-2'>100 Days of Machine Learning</h1>
-            <p class = 'bg-danger mt-2'>Failed</p>
-          </div>
-          <img src="../img/ml.jpg"/>
-        </a>
+    <div class = 'project-container user-select-none'>
+      <div class = 'masonry'>
+        <div class = 'post mb-2' onmouseover="contentSize(1)" onmouseout="setOpacity(1)">
+          <a href = '#'>
+            <div class = 'content'>
+              <h1 class = 'glowing text-light'>Lung Abnormality Dectection</h1>
+            </div>
+            <img src="../img/lung.jpg"/>
+          </a>
+        </div>
+        <div class = 'post mb-2' onmouseover="contentSize(2)" onmouseout="setOpacity(2)">
+          <a href = 'https://github.com/Immortalv5/Attendance-Using-Face-Recognition'>
+            <div class = 'content'>
+              <h1 class = 'glowing text-light'>Face Recognition</h1>
+            </div>
+            <img src="../img/face.gif"/>
+          </a>
+        </div>
+        <div class = 'post mb-2' onmouseover="contentSize(3)" onmouseout="setOpacity(3)">
+          <a href='#'>
+            <div class = 'content'>
+              <h1 class = 'glowing text-light'>Stack Overflow</h1>
+            </div>
+            <img src="../img/stackoverflow.PNG"/>
+          </a>
+        </div>
+        <div class = 'post mb-2' onmouseover="contentSize(4)" onmouseout="setOpacity(4)">
+          <a href = 'https://github.com/Immortalv5/First_QC'>
+            <div class = 'content'>
+              <h1 class = 'glowing text-light'>Quantum Computing</h1>
+            </div>
+            <img src="../img/quantum.png"/>
+          </a>
+        </div>
+        <div class = 'post mb-2' onmouseover="contentSize(5)" onmouseout="setOpacity(5)">
+          <a href = 'https://github.com/Immortalv5/Dino'>
+            <div class = 'content'>
+              <h1 class = 'glowing'>Google Dinosaur</h1>
+            </div>
+            <img src="../img/dino.gif"/>
+          </a>
+        </div>
+        <div class = 'post mb-2' onmouseover="contentSize(6)" onmouseout="setOpacity(6)">
+          <a href = '#'>
+            <div class = 'content'>
+              <h1 class = 'glowing'>Web Scraping</h1>
+            </div>
+            <img src="../img/webScraping.png"/>
+          </a>
+        </div>
+        <div class = 'post mb-2' onmouseover="contentSize(7)" onmouseout="setOpacity(7)">
+          <a href = '#'>
+            <div class = 'content'>
+              <h1 class = 'glowing'>Taxi Demand Prediction</h1>
+            </div>
+            <img src="../img/taxi.gif"/>
+          </a>
+        </div>
+        <div class = 'post' onmouseover="contentSize(8)" onmouseout="setOpacity(8)">
+          <a href = '#'>
+            <div class = 'content'>
+              <h1 class = 'glowing pb-2'>100 Days of Machine Learning</h1>
+              <p class = 'bg-danger mt-2'>Failed</p>
+            </div>
+            <img src="../img/ml.jpg"/>
+          </a>
+        </div>
       </div>
     </div>
+
+<!-- Footer -->
+    <footer class="mastfoot">
+      <div class = 'footer_social'>
+        <a class = 'fa fa-linkedin' href = 'https://www.linkedin.com/in/amar-sai-teja-c-13588b159/'></a>
+        <a class = "fa fa-github" href = 'https://github.com/Immortalv5'></a>
+        <a class = 'fa fa-envelope' href = 'mailto:amarsaiteja@outlook.com'></a>
+      </div>
+    </footer>
   </div>
 </body>
 
-<!-- Footer -->
-
-<footer class="mastfoot">
-  <div class = 'footer_social'>
-    <a class = 'fa fa-linkedin' href = 'https://www.linkedin.com/in/amar-sai-teja-c-13588b159/'></a>
-    <a class = "fa fa-github" href = 'https://github.com/Immortalv5'></a>
-    <a class = 'fa fa-envelope' href = 'mailto:amarsaiteja@outlook.com'></a>
-  </div>
-</footer>
-
-<script src = '../js/projects.js'></script>
+<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+<script src = '../js/projects.js'></script>
 
 </html>
