@@ -21,7 +21,7 @@ window.onload = function() {
   var stage = new createjs.Stage('joystick');
 
   var psp = new createjs.Shape();
-  psp.graphics.beginFill('#ffffff').drawCircle(xCenter, yCenter, 50);
+  psp.graphics.beginFill('#00000').drawCircle(xCenter, yCenter, 50);
 
   psp.alpha = 0.25;
 
@@ -135,10 +135,11 @@ function calculateCoords(angle, distance) {
 
 function planetMaking(){
   var myElement = $('#joystick')[0];
-  myElement.style.boxShadow = 'inset -10px -10px 40px #111, inset 10px 10px 30px -10px rgba(255, 255, 255, 1)'
-  myElement.style.background = 'url(../img/mars.png) repeat-x'
-  myElement.style.animation = 'translateBackground 15s infinite linear'
-  myElement.style.opacity = 1
+  myElement.style.boxShadow = 'inset -10px -10px 40px #111, inset 10px 10px 30px -10px rgba(255, 255, 255, 1)';
+  myElement.style.background = 'url(../img/mars.png) repeat-x';
+  myElement.style.animation = 'translateBackground 15s infinite linear';
+  myElement.style.opacity = 1;
+
 }
 
 function showingArrow(){
