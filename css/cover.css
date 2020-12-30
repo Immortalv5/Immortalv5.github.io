@@ -1,7 +1,7 @@
 /*
  * Base structure
  */
-
+/*
 html,
 body {
   height: 100%;
@@ -13,50 +13,22 @@ body {
   background-size: cover;
   height: 100%;
   /*background-image: url('../img/background.jpg');*/
-}
 
-/*
- * Loading
-*/
 
-#content{
-  visibility: visible;
-}
-
-@keyframes pulse_animation {
-  0% { box-shadow: 0 0 0 0 rgba(254, 255, 255, 0.8) }
-  100% { box-shadow: 0 0 0 200px rgba(254, 255, 255, 0) }
-}
-
-#pulse-wrapper {
-  visibility: hidden;
-  display: flex;
-  position: fixed;
+html,body {
+  color : #fff;
   width: 100%;
   height: 100%;
-  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(70deg, #555, #444, #333);
+  background-size: 120% 120%;
+  animation: moveFocus 5s ease infinite alternate;
 }
-#pulse-wrapper #pulse {
-  margin: auto;
-}
-#pulse-wrapper #pulse span {
-  position: absolute;
-  margin-top: -25px; /* = height / 2 */
-  margin-left: -25px; /* = width / 2 */
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #fff;
-  animation: pulse_animation 2s infinite;
+@keyframes moveFocus {
+  0%   { background-position: 0% 50% }
+  100% { background-position: 50% 0% }
 }
 
-#pulse-wrapper #pulse span:nth-child(1) {
-  animation-delay: 0.2s; /* Start the second wave with some delay */
-}
-
-#pulse-wrapper #pulse span:nth-child(2) {
-  animation-delay: 0.5s; /* Start the second wave with some delay */
-}
 
 /*
  * Navigation Bar
@@ -145,15 +117,21 @@ body {
 .geetha-left{
   padding: 1rem;
   margin-right: auto;
-  border-left: .25rem solid;
   border-radius: 0 3rem 3rem 0;
 }
 
 .geetha-right{
   padding: 1rem;
   margin-left: auto;
-  border-right: .25rem solid;
   border-radius: 3rem 0 0 3rem;
+}
+
+.just-geetha-left{
+  border-left: .25rem solid;
+}
+
+.just-geetha-right{
+  border-right: .25rem solid;
 }
 
 .auto{
@@ -179,6 +157,13 @@ img{
 
 .slide{
   overflow: hidden;
+}
+
+.line-1{
+    overflow: hidden;
+    position: relative;
+    margin-left:auto;
+    white-space: nowrap;
 }
 
 /*

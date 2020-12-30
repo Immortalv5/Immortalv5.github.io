@@ -1,4 +1,22 @@
 /*
+ * Base structure
+ */
+
+ html,
+ body {
+   height: 100%;
+   color : #fff;
+   font-family: 'Roboto', sans-serif;
+   text-shadow: 0 0.15rem .1rem rgba(0, 0, 0, .5);
+   z-index: 1;
+   background-repeat:no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-image: url('../img/background.jpg');
+ }
+
+
+/*
  * Navigation Bar
  */
 
@@ -31,28 +49,15 @@
  }
 
 /*
- * Tooltips
+ * Information
 */
 
-/**
- * Demo styles
- * Not needed for tooltips to work
- */
-
-/* `border-box`... ALL THE THINGS! */
-
-/**
- * Tooltip Styles
- */
-
-/* Add this attribute to the element that needs a tooltip */
 [data-tooltip] {
   position: relative;
   z-index: 0;
   cursor: pointer;
 }
 
-/* Hide the tooltip content by default */
 [data-tooltip]:before,
 [data-tooltip]:after {
   visibility: hidden;
@@ -62,41 +67,40 @@
   pointer-events: none;
 }
 
-/* Position tooltip above the element */
 [data-tooltip]:before {
   position: absolute;
-  bottom: 150%;
-  left: 50%;
-  margin-bottom: 5px;
+  bottom: 100%;
+  left: 75%;
+  transform: translate(-50%, -50%);
   margin-left: -80px;
-  padding: 7px;
-  width: 160px;
-  -webkit-border-radius: 3px;
-  -moz-border-radius: 3px;
-  border-radius: 3px;
-  background-color: #fff;
-  color: #666;
+  margin-bottom: 10px;
+  width: 100%;
+  padding: 1rem;
+  -webkit-border-radius: 1vmax;
+  -moz-border-radius: 1vmax;
+  border-radius: 1vmax;
+  background-color: #666;
+  color: #fff;
   content: attr(data-tooltip);
   text-align: center;
-  font-size: 14px;
+  font-size: 1.3vmax;
   line-height: 1.2;
 }
 
-/* Triangle hack to make tooltip look like a speech bubble */
 [data-tooltip]:after {
+  font-weight: 100;
   position: absolute;
-  bottom: 150%;
+  bottom: 105%;
   left: 50%;
-  margin-left: -5px;
-  border-top: 5px solid hsla(0, 0%, 20%, 0.9);
-  border-right: 5px solid transparent;
-  border-left: 5px solid transparent;
+  transform: translate(-50%, -50%);
+  border-top: 15px solid white;
+  border-right: 15px solid transparent;
+  border-left: 15px solid transparent;
   content: " ";
   font-size: 0;
   line-height: 0;
 }
 
-/* Show tooltip content on hover */
 [data-tooltip]:hover:before,
 [data-tooltip]:hover:after {
   visibility: visible;
@@ -112,24 +116,6 @@
 .about-container {
   max-width: 75%;
   margin : auto;
-}
-
-html,
-body {
-  height: 100%;
-  background-color: #333;
-  color : #fff;
-  text-shadow: 0 0.15rem .1rem rgba(0, 0, 0, .5);
-  z-index: 1;
-}
-
-#content{
-  background-repeat:no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  height: 100%;
-  background-image: url('../img/background.jpg');
-  visibility: hidden;
 }
 
 a:hover{
@@ -233,7 +219,7 @@ main{
     white-space: nowrap;
 }
 
-/* Animation */
+/* Slides Animation */
 .anim-typewriter{
   animation: typewriter 2s steps(44) 1s 1 normal both;
 }
@@ -303,57 +289,6 @@ main{
   100%{
     transform:rotateZ(-360deg);
   }
-}
-
-
-/*
- * Loading
-*/
-
-@keyframes pulse_animation {
-  0% { box-shadow: 0 0 0 0 rgba(254, 255, 255, 0.8) }
-  100% { box-shadow: 0 0 0 200px rgba(254, 255, 255, 0) }
-}
-
-#pulse-wrapper {
-  display: flex;
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-}
-#pulse-wrapper #pulse {
-  margin: auto;
-}
-#pulse-wrapper #pulse span {
-  position: absolute;
-  margin-top: -25px; /* = height / 2 */
-  margin-left: -25px; /* = width / 2 */
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: #fff;
-  animation: pulse_animation 2s infinite;
-}
-
-#pulse-wrapper #pulse span:nth-child(1) {
-  animation-delay: 0.2s; /* Start the second wave with some delay */
-}
-
-#pulse-wrapper #pulse span:nth-child(2) {
-  animation-delay: 0.3s; /* Start the second wave with some delay */
-}
-
-#pulse-wrapper #pulse span:nth-child(3) {
-  animation-delay: 0.4s; /* Start the second wave with some delay */
-}
-
-#pulse-wrapper #pulse span:nth-child(4) {
-  animation-delay: 0.5s; /* Start the second wave with some delay */
-}
-
-#pulse-wrapper #pulse span:nth-child(5) {
-  animation-delay: 0.6s; /* Start the second wave with some delay */
 }
 
 /*

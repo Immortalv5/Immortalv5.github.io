@@ -4,8 +4,7 @@
 <meta charset="utf-8">
 <title>Home</title>
 <link rel="icon" type="image/png" href="img/icon.png"/>
-<link rel="stylesheet" href="css/bootstrap.css"/>
-<link rel="stylesheet" href="css/bootstrap.min.css"/>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel='stylesheet' href="css/cover.css"/>
@@ -13,14 +12,7 @@
 
 <body class="text-center">
 
-  <div id="pulse-wrapper">
-      <div id="pulse">
-        <span></span>
-        <span></span>
-      </div>
-  </div>
-
-  <div class="cover user-select-none flex-column"̥ id = "content">
+  <div class="cover user-select-none flex-column"̥>
      <header>
         <nav class="navbar masthead nav-masthead justify-content-end">
           <a class ="nav-link active" href ='index.html'>Home</a>
@@ -31,15 +23,15 @@
 
     <div class = 'about'>
       <div class = 'left parallel text-left'>
-        <div class = 'up geetha-left name display-2 pl-4 pb-4'><strong>Amar</strong> Sai Teja<br/><strong>Chityala</strong></div>
+        <div class = 'up geetha-left name display-2 pl-4 pb-4 just-geetha-left'><strong>Amar</strong> Sai Teja<br/><strong>Chityala</strong></div>
         <div class = 'slide' data-period="100" data = 'ML DevOps Engineer'><span></span></div>
         <div class = 'slide' data-period='300' data = 'Data Scientist'><span></span></div>
         <div class = 'slide' data-period='500' data = 'Stack Developer'><span></span></div>
       </div>
       <div class = 'right parallel text-right'>
         <div class = 'up'><img src='img/wfh.png'></img></div>
-          <div class="up display-4 pb-4 typewrite" data-period="1000" data-type='[ "Hola!!😀😁", "I am a Developer💻.", "I Love to Design Stuff too 🎨."]'>
-            <span class="wrap geetha-right">Hello</span>
+          <div class="down display-4 pb-4 typewrite" data-period="1000" data-type='[ "Hola!!😀😁", "I am a Developer💻.", "I Love to Design Stuff too 🎨."]'>
+            <span class="wrap">Hello</span>
           </div>
         <div class = 'slide' data-period="100" data = 'Currently Working from Home'><span></span></div>
       </div>
@@ -54,13 +46,6 @@
     </footer>
   </div>
 </body>
-
-<script>
-$(window).on('load',function() {      //Do the code in the {}s when the window has loaded
-  $("#pulse-wrapper").fadeOut("slow");  //Fade out the #loader div
-});
-</script>
-
 
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
